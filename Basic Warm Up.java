@@ -132,4 +132,34 @@ class CombineArrays {
 }
 
 
+/// Reversing a String by accessing the string as an array
+
+
+	   class Reverse {
+    public static String reverse(String s) {
+        // Convert the string to a char array
+        char[] charArray = s.toCharArray();
+
+        // Reverse the array
+        int start = 0;
+        int end = charArray.length - 1;
+
+        // Swap characters from the start and end
+        while (start < end) {
+            char temp = charArray[start];
+            charArray[start] = charArray[end];
+            charArray[end] = temp;
+            start++;
+            end--;
+        }
+
+        // Return the new string from the reversed char array
+        return new String(charArray);
+    }
+
+}
+
+
+
+
 /// 
