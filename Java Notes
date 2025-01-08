@@ -3,3 +3,5 @@ NO STRINGS ATTACHED
 Java provides three classes to represent the sequence of characters i.e. String, StringBuffer, and StringBuilder. 
   A string is immutable in Java whereas, both StringBuffer and StringBuilder are mutable.
   This means they allow modifications to the character sequence without creating new objects.
+
+
