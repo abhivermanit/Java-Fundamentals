@@ -29,5 +29,22 @@ String[] stringArray = new String[5];  // String array defined
 
 
 
-// String, character, and Regex function
+/////// String, character, and Regex function
+
+
+// Check if the string is empty to avoid IndexOutOfBoundsException
+
+if (s == null || s.length() == 0) {
+            return s; // Return the original string if it's empty
+        }
+
+// Concatenate a character and string
+
+String capitalized = Character.toUpperCase(s.charAt(0)) + s.substring(1);
+
+// Split the sentence into words
+        String[] words = sentence.split(" ");
+
+
+
 
